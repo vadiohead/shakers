@@ -52,7 +52,7 @@
         smartSpeed: 300,
         dots: false,
         loop: true,
-        nav : false
+        nav : false,
     });
     
     // Modal Video
@@ -107,23 +107,23 @@
     
     // Related post carousel
     $(".related-slider").owlCarousel({
-        autoplay: true,
-        dots: false,
-        loop: true,
-        nav : true,
-        navText : [
-            '<i class="fa fa-angle-left" aria-hidden="true"></i>',
-            '<i class="fa fa-angle-right" aria-hidden="true"></i>'
-        ],
+    autoplay: false,
+    dots: true,
+    loop: false,
+    nav: true,
+    margin: 30,
+    navText : [
+        '<i class="fa fa-angle-left"></i>',
+        '<i class="fa fa-angle-right"></i>'
+    ],
         responsive: {
             0:{
-                items:1
-            },
-            576:{
-                items:1
+                items: 1,
+                nav: true
             },
             768:{
-                items:2
+                items: 2,
+                nav: true
             }
         }
     });

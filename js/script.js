@@ -14,7 +14,8 @@ document.getElementById('contactForm').addEventListener('submit', function(event
 
     emailjs.send("service_dshc2fd", "template_wai7aeg", params)
         .then(function(res) {
-            alert("Your message has been sent successfully!");
+            alert("Your message has been sent successfully! " +
+                "We will get back to you as soon as we can.");
             document.getElementById('contactForm').reset();
             btn.innerText = "Send Message";
             btn.disabled = false;

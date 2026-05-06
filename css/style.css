@@ -571,6 +571,10 @@ a:focus {
     box-shadow: none;
 }
 
+.food .food-img:hover {
+    color: #719a0a;
+}
+
 .food .food-item i {
     position: relative;
     display: inline-block;
@@ -990,122 +994,6 @@ a:focus {
 
 
 /*******************************/
-/*********** Team CSS **********/
-/*******************************/
-.team {
-    position: relative;
-    width: 100%;
-    padding: 45px 0 15px 0;
-}
-
-.team .team-item {
-    position: relative;
-    margin-bottom: 30px;
-    background: #ffffff;
-}
-
-.team .team-img {
-    position: relative;
-    border-radius: 15px 15px 0 0;
-    overflow: hidden;
-}
-
-.team .team-img img {
-    position: relative;
-    width: 100%;
-    margin-top: 15px;
-    transform: scale(1.1);
-    transition: .3s;
-}
-
-.team .team-item:hover img {
-    margin-top: 0;
-    margin-bottom: 15px;
-}
-
-.team .team-social {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: .5s;
-}
-
-.team .team-social a {
-    position: relative;
-    margin: 0 3px;
-    margin-top: 100px;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 40px;
-    font-size: 16px;
-    color: #ffffff;
-    background: #fbaf32;
-    opacity: 0;
-}
-
-.team .team-social a:hover {
-    color: #ffffff;
-    background: #719a0a;
-}
-
-.team .team-item:hover .team-social {
-    background: rgba(256, 256, 256, .5);
-}
-
-.team .team-item:hover .team-social a:first-child {
-    opacity: 1;
-    margin-top: 0;
-    transition: .3s 0s;
-}
-
-.team .team-item:hover .team-social a:nth-child(2) {
-    opacity: 1;
-    margin-top: 0;
-    transition: .3s .1s;
-}
-
-.team .team-item:hover .team-social a:nth-child(3) {
-    opacity: 1;
-    margin-top: 0;
-    transition: .3s .2s;
-}
-
-.team .team-item:hover .team-social a:nth-child(4) {
-    opacity: 1;
-    margin-top: 0;
-    transition: .3s .3s;
-}
-
-.team .team-text {
-    position: relative;
-    padding: 25px 15px;
-    text-align: center;
-    background: #ffffff;
-    border: 1px solid rgba(0, 0, 0, .07);
-    border-top: none;
-    border-radius: 0 0 15px 15px;
-}
-
-.team .team-text h2 {
-    font-size: 22px;
-    font-weight: 700;
-}
-
-.team .team-text p {
-    margin: 0;
-    font-size: 16px;
-}
-
-
-/*******************************/
 /******* Testimonial CSS *******/
 /*******************************/
 .testimonial {
@@ -1294,263 +1182,73 @@ a:focus {
     }
 }
 
-
-/*******************************/
-/******* Single Post CSS *******/
-/*******************************/
-.single {
-    position: relative;
-    padding: 45px 0;
+.blog .blog-item {
+    margin-bottom: 30px; 
+    padding-bottom: 60px;
 }
 
-.single .single-content {
-    position: relative;
-    margin-bottom: 30px;
-    overflow: hidden;
-}
-
-.single .single-content img {
-    margin-bottom: 20px;
-    width: 100%;
-}
-
-.single .single-tags {
-    margin: -5px -5px 41px -5px;
-    font-size: 0;
-}
-
-.single .single-tags a {
-    margin: 5px;
-    display: inline-block;
-    padding: 7px 15px;
-    font-size: 14px;
-    font-weight: 400;
-    color: #fbaf32;
-    border: 1px solid #dddddd;
-    border-radius: 5px;
-}
-
-.single .single-tags a:hover {
-    color: #ffffff;
-    background: #fbaf32;
-    border-color: #fbaf32;
-}
-
-.single .single-bio {
-    margin-bottom: 45px;
-    padding: 30px;
-    background: rgba(0, 0, 0, .04);
-    display: flex;
-}
-
-.single .single-bio-img {
-    width: 100%;
-    max-width: 100px;
-}
-
-.single .single-bio-img img {
-    width: 100%;
-    border-radius: 100px;
-}
-
-.single .single-bio-text {
-    padding-left: 30px;
-}
-
-.single .single-bio-text h3 {
-    font-size: 20px;
-    font-weight: 700;
-}
-
-.single .single-bio-text p {
-    margin: 0;
-}
-
-.single .single-related {
-    margin-bottom: 45px;
-}
-
-.single .single-related h2 {
-    font-size: 30px;
-    font-weight: 700;
-    margin-bottom: 25px;
-}
-
-.single .related-slider {
-    position: relative;
-    margin: 0 -15px;
-    width: calc(100% + 30px);
-}
-
-.single .related-slider .post-item {
-    margin: 0 15px;
-}
-
-.single .post-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-}
-
-.single .post-item .post-img {
-    width: 100%;
-    max-width: 80px;
-}
-
-.single .post-item .post-img img {
-    width: 100%;
-    border-radius: 5px;
-}
-
-.single .post-item .post-text {
-    padding-left: 15px;
-}
-
-.single .post-item .post-text a {
-    color: #757575;
-    font-size: 17px;
-}
-
-.single .post-item .post-text a:hover {
-    color: #fbaf32;
-}
-
-.single .post-item .post-meta {
-    display: flex;
-    margin-top: 8px;
-}
-
-.single .post-item .post-meta p {
-    display: inline-block;
-    margin: 0;
-    padding: 0 3px;
-    font-size: 14px;
-    font-weight: 300;
-    font-style: italic;
-}
-
-.single .post-item .post-meta p a {
-    margin-left: 5px;
-    color: #999999;
-    font-size: 14px;
-    font-weight: 300;
-    font-style: normal;
-}
-
-.single .related-slider .owl-nav {
+/* Container for the navigation buttons */
+.related-slider .owl-nav {
     position: absolute;
-    width: 90px;
-    top: -55px;
-    right: 15px;
-    display: flex;
+    width: 100%;
+    height: 40px;
+    top: 50%;
+    left: 0;
+    padding: 0 15px;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    transform: translateY(-50%);
+    pointer-events: none; 
+    z-index: 10;
 }
 
-.single .related-slider .owl-nav .owl-prev,
-.single .related-slider .owl-nav .owl-next {
-    margin-left: 15px;
-    width: 30px;
-    height: 30px;
-    display: flex;
+/* Force the navigation container to always show */
+.related-slider .owl-nav.disabled {
+    display: flex !important;
+    opacity: 0.5;             
+}
+
+/* Specifically style the buttons when they are at the end of the line */
+.related-slider .owl-nav .owl-prev.disabled,
+.related-slider .owl-next.disabled {
+    background: #cccccc !important;
+    color: #666666 !important;
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+/* Individual button styling */
+.related-slider .owl-prev,
+.related-slider .owl-next {
+    width: 40px;
+    height: 40px;
+    background: #fbaf32 !important;
+    color: #ffffff !important;
+    border-radius: 50%;
+    display: flex !important;
     align-items: center;
     justify-content: center;
-    color: #ffffff;
-    background: #fbaf32;
-    font-size: 16px;
-    transition: .3s;
+    font-size: 20px;
+    transition: 0.3s;
+    pointer-events: auto;
 }
 
-.single .related-slider .owl-nav .owl-prev:hover,
-.single .related-slider .owl-nav .owl-next:hover {
-    color: #ffffff;
-    background: #719a0a;
+.related-slider .owl-prev:hover,
+.related-slider .owl-next:hover {
+    background: #719a05 !important;
+    color: #ffffff !important;
 }
 
-.single .single-comment {
-    position: relative;
-    margin-bottom: 45px;
-}
-
-.single .single-comment h2 {
-    font-size: 30px;
-    font-weight: 700;
-    margin-bottom: 25px;
-}
-
-.single .comment-list {
-    list-style: none;
-    padding: 0;
-}
-
-.single .comment-child {
-    list-style: none;
-}
-
-.single .comment-body {
-    display: flex;
-    margin-bottom: 30px;
-}
-
-.single .comment-img {
-    width: 60px;
-}
-
-.single .comment-img img {
-    width: 100%;
-    border-radius: 100px;
-}
-
-.single .comment-text {
-    padding-left: 15px;
-    width: calc(100% - 60px);
-}
-
-.single .comment-text h3 {
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 3px;
-}
-
-.single .comment-text span {
-    display: block;
-    font-size: 14px;
-    font-weight: 300;
-    margin-bottom: 5px;
-}
-
-.single .comment-text .btn {
-    padding: 3px 10px;
-    font-size: 14px;
-    color: #454545;
-    background: #dddddd;
-    border-radius: 5px;
-}
-
-.single .comment-text .btn:hover {
-    background: #fbaf32;
-}
-
-.single .comment-form {
-    position: relative;
-}
-
-.single .comment-form h2 {
-    font-size: 30px;
-    font-weight: 700;
-    margin-bottom: 25px;
-}
-
-.single .comment-form form {
-    padding: 30px;
-    background: #f3f6ff;
-}
-
-.single .comment-form form .form-group:last-child {
-    margin: 0;
-}
-
-.single .comment-form input,
-.single .comment-form textarea {
-    border-radius: 5px;
+@media (max-width: 767.98px) {
+    .related-slider .owl-nav {
+        position: relative;
+        top: 0;
+        transform: none;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 20px;
+    }
 }
 
 
