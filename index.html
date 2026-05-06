@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Shake & Stack Burgers</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Free Website Template" name="keywords">
+        <meta content="Free Website Template" name="description">
+
+        <!-- Mail Script -->
+        <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+            (function(){
+                emailjs.init({
+                    publicKey: "h50QM9JQug7E1N7ez",
+                });
+            })();
+        </script>
+        
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Nunito:600,700" rel="stylesheet"> 
+        
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <!-- old version of font-awesome, replaced with newer version below
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+        <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- Nav Bar Start -->
+        <div class="navbar navbar-expand-lg bg-light navbar-light">
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand">Shake & Stack Burgers</a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <!--
+                        <a href="feature.html" class="nav-item nav-link">Feature</a>
+                        <a href="team.html" class="nav-item nav-link">Chef</a>
+                        -->
+                        <a href="menu.html" class="nav-item nav-link">Menu</a>
+                        <!--
+                        <a href="booking.html" class="nav-item nav-link">Booking</a>
+                        -->
+                        <!--
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu">
+                                <a href="blog.html" class="dropdown-item">Blog Grid</a>
+                                <a href="single.html" class="dropdown-item">Blog Detail</a>
+                            </div>
+                        </div>
+                        -->
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        <a href="https://www.google.com/searchviewer/42?cvd=CLw_EicKJeICIjIgEhkiF9LX29IPEQoNL2cvMTFsdjBjeDBrcBgAOgMI8A0%3D&amp;hl=en-US&amp;gl=us&amp;fo_m=MfohQo559jFvMUOzJVpjPL1YMfZ3bInYwBDuMfaXTPp5KXh-&amp;utm_source=tactile&amp;gei=Jsz2acOmCrn30PEP4_fTqAc&amp;ei=Jsz2acOmCrn30PEP4_fTqAc&amp;fo_s=OA&amp;opi=79508299&amp;ebb=1&amp;cs=0&amp;foub=mcpp"
+                            class="nav-item nav-link">Order Online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Nav Bar End -->
+
+
+        <!-- Carousel Start -->
+        <div class="carousel">
+            <div class="container-fluid">
+                <div class="owl-carousel">
+                    <div class="carousel-item">
+                        <div class="carousel-img">
+                            <img src="img/carousel-1-2.png" alt="Image">
+                        </div>
+                        <div class="carousel-text">
+                            <h1>U District's <span>Best Quality </span>Burgers</h1>
+                            <p>
+                                Fill your tummy with our delicious burgers, made with the freshest ingredients and cooked with love.
+                            </p>
+                            <div class="carousel-btn">
+                                <a class="btn custom-btn" href="menu.html">View Menu</a>
+                                <a class="btn custom-btn" href="https://www.google.com/searchviewer/42?cvd=CLw_EicKJeICIjIgEhkiF9LX29IPEQoNL2cvMTFsdjBjeDBrcBgAOgMI8A0%3D&amp;hl=en-US&amp;gl=us&amp;fo_m=MfohQo559jFvMUOzJVpjPL1YMfZ3bInYwBDuMfaXTPp5KXh-&amp;utm_source=tactile&amp;gei=Jsz2acOmCrn30PEP4_fTqAc&amp;ei=Jsz2acOmCrn30PEP4_fTqAc&amp;fo_s=OA&amp;opi=79508299&amp;ebb=1&amp;cs=0&amp;foub=mcpp"
+                                    >Order Online</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-img">
+                            <img src="img/carousel-2.jpg" alt="Image">
+                        </div>
+                        <div class="carousel-text">
+                            <h1><span>Flavorful Creamy </span>Milkshakes</h1>
+                            <p>
+                                Our milkshakes are the perfect complement to our burgers, made with real ice cream and bursting with flavor.    
+                            </p>
+                            <div class="carousel-btn">
+                                <a class="btn custom-btn" href="menu.html">View Menu</a>
+                                <a class="btn custom-btn" href="https://www.google.com/searchviewer/42?cvd=CLw_EicKJeICIjIgEhkiF9LX29IPEQoNL2cvMTFsdjBjeDBrcBgAOgMI8A0%3D&amp;hl=en-US&amp;gl=us&amp;fo_m=MfohQo559jFvMUOzJVpjPL1YMfZ3bInYwBDuMfaXTPp5KXh-&amp;utm_source=tactile&amp;gei=Jsz2acOmCrn30PEP4_fTqAc&amp;ei=Jsz2acOmCrn30PEP4_fTqAc&amp;fo_s=OA&amp;opi=79508299&amp;ebb=1&amp;cs=0&amp;foub=mcpp"
+                                    >Order Online</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-img">
+                            <img src="img/carousel-3.jpg" alt="Image">
+                        </div>
+                        <div class="carousel-text">
+                            <h1>Multiple <span>Delivery </span>Options</h1>
+                            <p>
+                                Choose from our convenient delivery options and have your favorite meals delivered right to your doorstep.
+                            </p>
+                            <div class="carousel-btn">
+                                <a class="btn custom-btn" href="menu.html">View Menu</a>
+                                <a class="btn custom-btn" href="https://www.google.com/searchviewer/42?cvd=CLw_EicKJeICIjIgEhkiF9LX29IPEQoNL2cvMTFsdjBjeDBrcBgAOgMI8A0%3D&amp;hl=en-US&amp;gl=us&amp;fo_m=MfohQo559jFvMUOzJVpjPL1YMfZ3bInYwBDuMfaXTPp5KXh-&amp;utm_source=tactile&amp;gei=Jsz2acOmCrn30PEP4_fTqAc&amp;ei=Jsz2acOmCrn30PEP4_fTqAc&amp;fo_s=OA&amp;opi=79508299&amp;ebb=1&amp;cs=0&amp;foub=mcpp"
+                                    >Order Online</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel End -->
+        
+        
+        <!-- Booking Start -->
+        <!--
+        <div class="booking">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-7">
+                        <div class="booking-content">
+                            <div class="section-header">
+                                <p>Book A Table</p>
+                                <h2>Book Your Table For Private Dinners & Happy Hours</h2>
+                            </div>
+                            <div class="about-text">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus. Aenean consectetur convallis porttitor. Aliquam interdum at lacus non blandit.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="booking-form">
+                            <form>
+                                <div class="control-group">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Name" required="required" />
+                                        <div class="input-group-append">
+                                            <div class="input-group-text"><i class="far fa-user"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <div class="input-group">
+                                        <input type="email" class="form-control" placeholder="Email" required="required" />
+                                        <div class="input-group-append">
+                                            <div class="input-group-text"><i class="far fa-envelope"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Mobile" required="required" />
+                                        <div class="input-group-append">
+                                            <div class="input-group-text"><i class="fa fa-mobile-alt"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <div class="input-group date" id="date" data-target-input="nearest">
+                                        <input type="text" class="form-control datetimepicker-input" placeholder="Date" data-target="#date" data-toggle="datetimepicker"/>
+                                        <div class="input-group-append" data-target="#date" data-toggle="datetimepicker">
+                                            <div class="input-group-text"><i class="far fa-calendar-alt"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <div class="input-group time" id="time" data-target-input="nearest">
+                                        <input type="text" class="form-control datetimepicker-input" placeholder="Time" data-target="#time" data-toggle="datetimepicker"/>
+                                        <div class="input-group-append" data-target="#time" data-toggle="datetimepicker">
+                                            <div class="input-group-text"><i class="far fa-clock"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <div class="input-group">
+                                        <select class="custom-select form-control">
+                                            <option selected>Guest</option>
+                                            <option value="1">1 Guest</option>
+                                            <option value="2">2 Guest</option>
+                                            <option value="3">3 Guest</option>
+                                            <option value="4">4 Guest</option>
+                                            <option value="5">5 Guest</option>
+                                            <option value="6">6 Guest</option>
+                                            <option value="7">7 Guest</option>
+                                            <option value="8">8 Guest</option>
+                                            <option value="9">9 Guest</option>
+                                            <option value="10">10 Guest</option>
+                                        </select>
+                                        <div class="input-group-append">
+                                            <div class="input-group-text"><i class="fa fa-chevron-down"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button class="btn custom-btn" type="submit">Book Now</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        -->
+        <!-- Booking End -->
+        
+        <!-- Feature Start -->
+        <div class="feature">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="section-header">
+                            <p>Why Choose Us</p>
+                            <h2>Our Key Features</h2>
+                        </div>
+                        <div class="feature-text">
+                            <div class="feature-img">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <img src="img/feature-1.jpg" alt="Image">
+                                    </div>
+                                    <div class="col-6">
+                                        <img src="img/feature-2.jpg" alt="Image">
+                                    </div>
+                                    <div class="col-6">
+                                        <img src="img/feature-3.jpg" alt="Image">
+                                    </div>
+                                    <div class="col-6">
+                                        <img src="img/feature-4.jpg" alt="Image">
+                                    </div>
+                                </div>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet consec adipis elit. Phasel nec preti mi. Curabit facilis ornare velit non vulputa. Aliquam metus tortor, auctor id gravida condime, viverra quis sem. Curabit non nisl nec nisi sceleri maximus 
+                            </p>
+                            <a class="btn custom-btn" href="about.html">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="feature-item">
+                                    <i class="flaticon-cooking"></i>
+                                    <h3>Best Burgers in U District</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet elit. Phasel nec preti mi. Curabit facilis ornare velit non vulput metus tortor
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="feature-item">
+                                    <i class="flaticon-vegetable"></i>
+                                    <h3>Natural ingredients</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet elit. Phasel nec preti mi. Curabit facilis ornare velit non vulput metus tortor
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="feature-item">
+                                    <i class="flaticon-medal"></i>
+                                    <h3>Best quality products</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet elit. Phasel nec preti mi. Curabit facilis ornare velit non vulput metus tortor
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="feature-item">
+                                    <i class="flaticon-meat"></i>
+                                    <h3>Fresh Vegetables & Meat</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet elit. Phasel nec preti mi. Curabit facilis ornare velit non vulput metus tortor
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="feature-item">
+                                    <i class="flaticon-courier"></i>
+                                    <h3>Online Ordering Options</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet elit. Phasel nec preti mi. Curabit facilis ornare velit non vulput metus tortor
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="feature-item">
+                                    <i class="flaticon-fruits-and-vegetables"></i>
+                                    <h3>Ground beef & Low fat</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet elit. Phasel nec preti mi. Curabit facilis ornare velit non vulput metus tortor
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Feature End -->
+
+        <!-- About Start -->
+        <div class="about">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="about-img">
+                            <img src="img/about.jpg" alt="Image">
+                            <button type="button" class="btn-play" data-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-content">
+                            <div class="section-header">
+                                <p>About Us</p>
+                                <h2>Shakes that hit.<br> Burgers that stack.</h2>
+                            </div>
+                            <div class="about-text">
+                                <p>
+                                    We are a family-owned burger joint 
+                                    located in the heart of the Seattle's 
+                                    University District. We are passionate 
+                                    about creating delicious, high-quality 
+                                    burgers and shakes that satisfy our 
+                                    customers' cravings. Our menu features 
+                                    a variety of mouth-watering options, 
+                                    including classic cheeseburgers, 
+                                    loaded fries, and creamy milkshakes. 
+                                    <br><br>
+                                    We use only the freshest ingredients 
+                                    and cook everything to order, ensuring 
+                                    that every bite is bursting with flavor.
+                                    Whether you're looking for a quick lunch 
+                                    or a late-night snack, we've got you covered 
+                                    with our tasty offerings and friendly service.
+                                </p>
+                                <a class="btn custom-btn" href="menu.html">See our Menu</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+        
+        
+        <!-- Video Modal Start-->
+        <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>        
+                        <!-- 16:9 aspect ratio -->
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/tYyrNazMLLI?si=oAI-hbMcfsZ74qhs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <!-- Video Modal End -->
+        
+        <!-- Food Start -->
+        <div class="food">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-4">
+                        <div class="food-item">
+                            <!-- Replaced flaticon with local PNG -->
+                            <img src="img/burger.png" alt="Burgers" style="width: 128px; height: 128px; object-fit: contain;">
+                            <h2>Burgers</h2>
+                            <p>
+                                Delicious burgers!!! Best mashallah spicy, sweet, super spicy!!
+                            </p>
+                            <a href="menu.html">See more options</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="food-item">
+                            <!-- Replaced flaticon-snack with your local PNG -->
+                            <img src="img/fries.png" alt="Sides" style="width: 128px; height: 128px; object-fit: contain;">
+                            <h2>Sides</h2>
+                            <p>
+                                Regular fries, chicken tenders, cheese sticks and loaded fries!!    
+                            </p>
+                            <a href="menu.html">See more options</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="food-item">
+                            <!-- Replaced flaticon-snack with your local PNG -->
+                            <img src="img/milkshake.png" alt="Beverages" style="width: 128px; height: 128px; object-fit: contain;">
+                            <h2>Beverages</h2>
+                            <p>
+                                Creamy shakes, sweet lemonades, yaeyy!!!    
+                            </p>
+                            <a href="menu.html">See more options</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Food End -->
+        
+        
+        <!-- Menu Start -->
+        <div class="menu">
+            <div class="container">
+                <div class="section-header text-center">
+                    <p>Food Menu</p>
+                    <h2>Delicious Food Menu</h2>
+                </div>
+                <div class="menu-tab">
+                    <ul class="nav nav-pills justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="pill" href="#burgers">Burgers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="pill" href="#snacks">Snacks</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="pill" href="#beverages">Beverages</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="burgers" class="container tab-pane active">
+                            <div class="row">
+                                <div class="col-lg-7 col-md-12">
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="img/menu-burger.jpg" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Mini cheese Burger</span> <strong>$9.00</strong></h3>
+                                            <p>Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="img/menu-burger.jpg" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Double size burger</span> <strong>$11.00</strong></h3>
+                                            <p>Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="img/menu-burger.jpg" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Bacon, EGG and Cheese</span> <strong>$13.00</strong></h3>
+                                            <p>Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="img/menu-burger.jpg" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Pulled porx Burger</span> <strong>$18.00</strong></h3>
+                                            <p>Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="img/menu-burger.jpg" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Fried chicken Burger</span> <strong>$22.00</strong></h3>
+                                            <p>Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 d-none d-lg-block">
+                                    <img src="img/menu-burger-img.jpg" alt="Image">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="snacks" class="container tab-pane fade">
+                            <div class="row">
+                                <div class="col-lg-7 col-md-12">
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="img/menu-snack.jpg" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Corn Tikki - Spicy fried Aloo</span> <strong>$15.00</strong></h3>
+                                            <p>Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="img/menu-snack.jpg" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Bread besan Toast</span> <strong>$35.00</strong></h3>
+                                            <p>Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="img/menu-snack.jpg" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Healthy soya nugget snacks</span> <strong>$20.00</strong></h3>
+                                            <p>Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="img/menu-snack.jpg" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Tandoori Soya Chunks</span> <strong>$30.00</strong></h3>
+                                            <p>Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 d-none d-lg-block">
+                                    <img src="img/menu-snack-img.jpg" alt="Image">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="beverages" class="container tab-pane fade">
+                            <div class="row">
+                                <div class="col-lg-7 col-md-12">
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="img/menu-beverage.jpg" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Single Cup Brew</span> <strong>$7.00</strong></h3>
+                                            <p>Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="img/menu-beverage.jpg" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Caffe Americano</span> <strong>$9.00</strong></h3>
+                                            <p>Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="img/menu-beverage.jpg" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Caramel Macchiato</span> <strong>$15.00</strong></h3>
+                                            <p>Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="img/menu-beverage.jpg" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Standard black coffee</span> <strong>$8.00</strong></h3>
+                                            <p>Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="img/menu-beverage.jpg" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Standard black coffee</span> <strong>$12.00</strong></h3>
+                                            <p>Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 d-none d-lg-block">
+                                    <img src="img/menu-beverage-img.jpg" alt="Image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Menu End -->        
+        
+        <!-- Testimonial Start -->
+        <div class="testimonial">
+            <div class="container">
+                <div class="section-header text-center">
+                    <p>Customer Review</p>
+                    <h2>Read What Our Customers Say About Us</h2>
+                </div>
+                <div class="owl-carousel testimonials-carousel">
+                    
+                    <div class="testimonial-item">
+                        <!--
+                        <div class="testimonial-img">
+                            <img src="img/testimonial-1.jpg" alt="Image">
+                        </div>
+                        -->
+                        <p>
+                            "...For anyone searching for a local spot that deserves serious recognition, 
+                            Stack and Shake is it. One visit, and you’ll understand why this hidden gem 
+                            has our full recommendation."    
+                        </p>
+                        <a href="https://maps.app.goo.gl/iEZyq3hsAUeda53CA" target="_blank" class="review-link" aria-label="Read Bellatrix's review on Google Maps">
+                            <h2>Bellatrix</h2>
+                        </a>
+                    </div>
+                    <div class="testimonial-item">
+                        <!--
+                        <div class="testimonial-img">
+                            <img src="img/testimonial-2.jpg" alt="Image">
+                        </div>
+                        -->
+                        <p>
+                            "My fiancé and his buddy showed me this place. We are all big fans! I’m loving
+                            the updates to the place (wall art and outdoor seating). 
+                            Really good food and great staff!"    
+                        </p>
+                        <a href="https://maps.app.goo.gl/SyKsW9hapojmmXzPA" target="_blank" class="review-link" aria-label="Read Sierra's review on Google Maps">
+                            <h2>Sierra</h2>
+                        </a>
+                    </div>
+                    <div class="testimonial-item">
+                        <!--
+                        <div class="testimonial-img">
+                            <img src="img/testimonial-3.jpg" alt="Image">
+                        </div>
+                        -->
+                        <p>
+                            "Great burgers and shakes from friendly folks who remember your name. 
+                            Service is fast, the place is clean, they have Baja Blast - need I say more?"
+                        </p>
+                        <a href="https://maps.app.goo.gl/L5LewJoRTxzevbyW9" target="_blank" class="review-link" aria-label="Read Emily's review on Google Maps">
+                            <h2>Emily</h2>
+                        </a>
+                    </div>
+                    <div class="testimonial-item">
+                        <!--
+                        <div class="testimonial-img">
+                            <img src="img/testimonial-4.jpg" alt="Image">
+                        </div>
+                        -->
+                        <p>
+                            "I’ve been a customer since this place opened. Milkshakes have such 
+                            great flavor and taste, fries are unbelievable, and burgers are very tasty. 
+                            I’ve gotten to know everyone that works there, all of which (especially Joshua) 
+                            are incredibly kind. The atmosphere is great as well, so I highly recommend."    
+                        </p>
+                        <a href="https://maps.app.goo.gl/ZqoSLq3GaZJwFB1Y7" target="_blank" class="review-link" aria-label="Read Raj's review on Google Maps">
+                            <h2>Raj</h2>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
+        
+        
+        <!-- Contact Start -->
+        <div class="contact">
+            <div class="container">
+                <div class="section-header text-center">
+                    <p>Contact Us</p>
+                    <h2>Contact For Any Query</h2>
+                </div>
+                <div class="row align-items-center contact-information">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="contact-info">
+                            <div class="contact-icon">
+                                <i class="fa fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Address</h3>
+                                <p>4106 Brooklyn Ave NE STE 101A, Seattle, WA</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="contact-info">
+                            <div class="contact-icon">
+                                <i class="fa fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Call Us</h3>
+                                <p>+012 345 6789</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="contact-info">
+                            <div class="contact-icon">
+                                <i class="fa fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Email Us</h3>
+                                <p>shakeandstackburger@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="contact-info">
+                            <div class="contact-icon">
+                                <i class="fa fa-share"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Follow Us</h3>
+                                <div class="contact-social">
+                                    <!--
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-youtube"></i></a>
+                                    -->
+                                    <a href="https://www.instagram.com/shakeandstackburgers/"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://www.threads.com/@shakeandstackburgers?xmt=AQF06e5yK0O65S947ZF5W683IvJagYKwJi_CuzvGc_KizyA"><i class="fa-brands fa-threads"></i></a>
+                                    <!--
+                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                    -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row contact-form">
+                    <div class="col-md-6">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1552.4696072668091!2d-122.31320626414995!3d47.65648369880964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54901505fd367147%3A0xadac5f65a1dc6446!2sShake%20%26%20Stack%20Burgers!5e0!3m2!1sen!2sus!4v1777763646834!5m2!1sen!2sus" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                    <div class="col-md-6">
+                        <div id="success"></div>
+                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                            <div class="control-group">
+                                <input type="text" class="form-control" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="control-group">
+                                <input type="email" class="form-control" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="control-group">
+                                <input type="text" class="form-control" id="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="control-group">
+                                <textarea class="form-control" id="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div>
+                                <button class="btn custom-btn" type="submit" id="sendMessageButton">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact End -->
+
+        <!-- Footer Start -->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <!-- Left Side: Contact Info -->
+                            <div class="col-md-6">
+                                <div class="footer-contact">
+                                    <h2>Our Address</h2>
+                                    <p><i class="fa fa-map-marker-alt"></i>4106 Brooklyn Ave NE STE 101A, Seattle, WA</p>
+                                    <p><i class="fa fa-phone-alt"></i>+012 345 67890</p>
+                                    <p><i class="fa fa-envelope"></i>shakeandstackburger@gmail.com</p>
+                                    <div class="footer-social">
+                                        <a href="https://www.instagram.com/p/DRGH6pyjVZf/"><i class="fab fa-instagram"></i></a>
+                                        <a href="https://www.threads.com/@shakeandstackburgers?xmt=AQF06e5yK0O65S947ZF5W683IvJagYKwJi_CuzvGc_KizyA"><i class="fa-brands fa-threads"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Right Side: Business Hours -->
+                            <div class="col-md-6">
+                                <div class="footer-contact">
+                                    <h2>Business Hours</h2>
+                                    <p><i class="far fa-clock"></i> Everyday</p>
+                                    <p>11:00 AM - 10:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="container">
+                    <p>Copyright &copy; <a href="#">Shake & Stack Burgers</a>, All Right Reserved.</p>
+                    <p>Designed By <a href="https://htmlcodex.com">HTML Codex</a>, 
+                        Modified by <a href="https://github.com/vadiohead">vadiohead</a></p>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/tempusdominus/js/moment.min.js"></script>
+        <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+        <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+        
+        <!-- Contact Javascript File -->
+        <!--
+        <script src="mail/contact.js"></script>
+        <script src="mail/jqBootstrapValidation.min.js"></script>
+        -->
+        
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+        
+        <!-- Mail Javascript -->
+        <script src="js/script.js"></script>
+    </body>
+</html>
