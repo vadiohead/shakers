@@ -920,12 +920,22 @@ a:focus {
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
-/* Optional: Subtle scale effect on the menu item being hovered */
 .menu .menu-item:hover {
     cursor: pointer;
-    background: rgba(251, 175, 50, 0.05); /* Very light orange tint */
+    background: rgba(251, 175, 50, 0.05);
     border-radius: 10px;
     transition: 0.2s;
+}
+
+#mobileImageModal .close {
+    z-index: 9999;
+    padding: 10px;
+}
+
+#mobileImageModal .modal-body img {
+    max-height: 80vh; /* prevents the image from being taller than the phone screen */
+    width: auto;
+    margin: 0 auto;
 }
 
 
