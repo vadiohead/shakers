@@ -107,25 +107,53 @@
     
     // Related post carousel
     $(".related-slider").owlCarousel({
-    autoplay: false,
-    dots: true,
-    loop: false,
-    nav: true,
-    margin: 30,
-    navText : [
-        '<i class="fa fa-angle-left"></i>',
-        '<i class="fa fa-angle-right"></i>'
-    ],
-        responsive: {
-            0:{
-                items: 1,
-                nav: true
-            },
-            768:{
-                items: 2,
-                nav: true
+        autoplay: false,
+        dots: true,
+        loop: false,
+        nav: true,
+        margin: 30,
+        navText : [
+            '<i class="fa fa-angle-left"></i>',
+            '<i class="fa fa-angle-right"></i>'
+        ],
+            responsive: {
+                0:{
+                    items: 1,
+                    nav: true
+                },
+                768:{
+                    items: 2,
+                    nav: true
+                }
             }
-        }
+    });
+
+    // Dynamic Menu Image Swap Burgers
+    $(document).on('mouseenter', '.menu-item', function () {
+        var newImgSrc = $(this).find('.menu-img img').attr('src');
+        $('#mainMenuImgBurgers').attr('src', newImgSrc);
+        console.log("Hovered! New Source: " + newImgSrc);
+    });
+
+    // Dynamic Menu Image Swap Sides
+    $(document).on('mouseenter', '.menu-item', function () {
+        var newImgSrc = $(this).find('.menu-img img').attr('src');
+        $('#mainMenuImgSides').attr('src', newImgSrc);
+        console.log("Hovered! New Source: " + newImgSrc);
+    });
+
+    // Dynamic Menu Image Swap Milkshakes
+    $(document).on('mouseenter', '.menu-item', function () {
+        var newImgSrc = $(this).find('.menu-img img').attr('src');
+        $('#mainMenuImgMilkshakes').attr('src', newImgSrc);
+        console.log("Hovered! New Source: " + newImgSrc);
+    });
+
+    // Dynamic Menu Image Swap Lemonades
+    $(document).on('mouseenter', '.menu-item', function () {
+        var newImgSrc = $(this).find('.menu-img img').attr('src');
+        $('#mainMenuImgLemonades').attr('src', newImgSrc);
+        console.log("Hovered! New Source: " + newImgSrc);
     });
     
 })(jQuery);

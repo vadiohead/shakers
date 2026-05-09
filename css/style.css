@@ -464,86 +464,6 @@ a:focus {
     }
 }
 
-
-/*******************************/
-/********* Booking CSS *********/
-/*******************************/
-.booking {
-    position: relative;
-    width: 100%;
-    margin-bottom: 45px;
-    background: rgba(0, 0, 0, .04);
-}
-
-.booking .booking-content {
-    padding: 45px 0 15px 0;
-}
-
-.booking .booking-content .section-header {
-    margin-bottom: 30px;
-}
-
-.booking .booking-form {
-    padding: 60px 30px;
-    background: #fbaf32;
-}
-
-.booking .booking-form .control-group {
-    margin-bottom: 15px;
-}
-
-.booking .booking-form .input-group-text {
-    position: absolute;
-    padding: 0;
-    border: none;
-    background: none;
-    top: 15px;
-    right: 15px;
-    color: #ffffff;
-    font-size: 14px;
-}
-
-.booking .booking-form .form-control {
-    height: 45px;
-    font-size: 14px;
-    color: #ffffff;
-    padding: 0 15px;
-    border-radius: 5px !important;
-    border: 1px solid #ffffff;
-    background: transparent;
-}
-
-.booking .booking-form select.form-control {
-    padding: 0 10px;
-}
-
-.booking .booking-form .form-control::placeholder {
-    color: #ffffff;
-    opacity: 1;
-}
-
-.booking .booking-form .form-control:-ms-input-placeholder,
-.booking .booking-form .form-control::-ms-input-placeholder {
-    color: #ffffff;
-}
-
-.booking .booking-form .input-group [data-toggle="datetimepicker"] {
-    cursor: default;
-}
-
-.booking .booking-form .btn.custom-btn {
-    width: 100%;
-    color: #fbaf32;
-    background: #ffffff;
-    border: 1px solid #ffffff;
-}
-
-.booking .booking-form .btn.custom-btn:hover {
-    color: #ffffff;
-    background: transparent;
-}
-
-
 /*******************************/
 /********** Menu CSS ***********/
 /*******************************/
@@ -990,6 +910,22 @@ a:focus {
     .menu .menu-text h3::after {
         display: none;
     }
+}
+
+#mainMenuImg {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Optional: Subtle scale effect on the menu item being hovered */
+.menu .menu-item:hover {
+    cursor: pointer;
+    background: rgba(251, 175, 50, 0.05); /* Very light orange tint */
+    border-radius: 10px;
+    transition: 0.2s;
 }
 
 
