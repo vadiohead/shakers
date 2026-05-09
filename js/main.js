@@ -156,18 +156,18 @@
         console.log("Hovered! New Source: " + newImgSrc);
     });
 
+    // Mobile Menu Modal
     $(document).on('click', '.menu-item', function () {
-        // Check if the screen width is mobile
         if ($(window).width() < 992) {
-            // 1. Get data from the clicked item
+            // get data from the clicked item
             var imgSrc = $(this).find('.menu-img img').attr('src');
             var itemTitle = $(this).find('.menu-text h3 span').text();
 
-            // 2. Inject data into the modal
+            // inject data into the modal
             $('#popupImg').attr('src', imgSrc);
             $('#popupTitle').text(itemTitle);
 
-            // 3. Show the modal
+            // show the modal
             $('#mobileImageModal').modal('show');
         }
     });
