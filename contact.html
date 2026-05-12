@@ -9,6 +9,18 @@
         <meta content="Free Website Template" name="description">
         -->
 
+        <!-- Mail Script -->
+        <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+            (function(){
+                emailjs.init({
+                    publicKey: "h50QM9JQug7E1N7ez",
+                });
+            })();
+        </script>
+
         <!-- Favicon -->
         <link href="img/favicon.ico" rel="icon">
 
@@ -53,7 +65,12 @@
         
         
         <!-- Page Header Start -->
-        <div class="page-header">
+        <div class="page-header"
+            style="background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), 
+                    url(img/outdoor_view.jpg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -106,7 +123,7 @@
                             </div>
                             <div class="contact-text">
                                 <h3>Email Us</h3>
-                                <p>shakeandstackburger@gmail.com</p>
+                                <p>shakeandstackburgerllc@gmail.com</p>
                             </div>
                         </div>
                     </div>
@@ -118,16 +135,8 @@
                             <div class="contact-text">
                                 <h3>Follow Us</h3>
                                 <div class="contact-social">
-                                    <!--
-                                    <a href=""><i class="fab fa-twitter"></i></a>
-                                    <a href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a href=""><i class="fab fa-youtube"></i></a>
-                                    -->
                                     <a href="https://www.instagram.com/shakeandstackburgers/"><i class="fab fa-instagram"></i></a>
                                     <a href="https://www.threads.com/@shakeandstackburgers?xmt=AQF06e5yK0O65S947ZF5W683IvJagYKwJi_CuzvGc_KizyA"><i class="fa-brands fa-threads"></i></a>
-                                    <!--
-                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
-                                    -->
                                 </div>
                             </div>
                         </div>
@@ -179,7 +188,7 @@
                                     <h2>Contact Info</h2>
                                     <p><i class="fa fa-map-marker-alt"></i>4106 Brooklyn Ave NE STE 101A, Seattle, WA</p>
                                     <p><i class="fa fa-phone-alt"></i>+012 345 67890</p>
-                                    <p><i class="fa fa-envelope"></i>shakeandstackburger@gmail.com</p>
+                                    <p><i class="fa fa-envelope"></i>shakeandstackburgerllc@gmail.com</p>
                                     <div class="footer-social">
                                         <a href="https://www.instagram.com/p/DRGH6pyjVZf/"><i class="fab fa-instagram"></i></a>
                                         <a href="https://www.threads.com/@shakeandstackburgers?xmt=AQF06e5yK0O65S947ZF5W683IvJagYKwJi_CuzvGc_KizyA"><i class="fa-brands fa-threads"></i></a>
@@ -226,5 +235,8 @@
 
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
+        
+        <!-- Mail Javascript -->
+        <script src="js/script.js"></script>
     </body>
 </html>
