@@ -103,6 +103,27 @@
             }
         }
     });
+
+    // Promo Modal
+    $(document).ready(function () {
+        var isHomePage = window.location.pathname === "/" || 
+            window.location.pathname.includes("index.html"); // restrict to index.html
+        
+        /*
+        if (isHomePage && !sessionStorage.getItem('promoModalShown')) {
+            setTimeout(function () {
+                $('#promoModal').modal('show');
+                sessionStorage.setItem('promoModalShown', 'true');
+            }, 1000);
+        }
+        */
+
+        if (isHomePage) {
+        setTimeout(function () {
+            $('#promoModal').modal('show');
+        }, 1000);
+    }
+    });
     
     
     // Related post carousel
